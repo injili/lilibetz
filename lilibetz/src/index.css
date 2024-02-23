@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css');
 
 body {
     font-family: 'Arial, sans-serif';
