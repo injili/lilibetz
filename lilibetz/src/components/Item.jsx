@@ -8,15 +8,16 @@ const Item = (props) => {
                 className="h-72 rounded-lg w-full object-cover transition duration-500 group-hover:scale-105"
             /></Link>
 
-            <div className="relative bg-white pt-3">
+            <div className="relative pt-4">
                 <h3
-                    className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                    className="group-hover:text-amber-500"
                 >
-                    {props.name}
+                    <strong>
+                        {props.name}
+                    </strong>
                 </h3>
-                <p className="mt-2">
-                    <span className="sr-only"> Regular Price </span>
-                    <span className="tracking-wider text-gray-900"> Ksh. {props.new_price}</span>
+                <p className="pt-2">
+                    <span className="tracking-wider"> Ksh. {props.new_price}.00</span>
                 </p>
             </div>
         </div>

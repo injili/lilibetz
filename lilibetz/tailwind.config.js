@@ -5,7 +5,13 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        phudu: ['Phudu', 'sans-serif'],
+        jost: ['Jost', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif']
+      }
+    },
   },
   plugins: [
     require('flowbite/plugin'),

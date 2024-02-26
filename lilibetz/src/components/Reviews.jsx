@@ -1,18 +1,26 @@
 import { useEffect, useRef } from 'react';
 import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Reviews()
 {
+    useEffect(()=>{
+        Aos.init({
+            duration:2000,
+            once: true,
+        })
+    }, [])
     return (
-        <section className="bg-zinc-950 mx-auto max-w-screen-xl rounded-lg mt-8">
-            <div className="mx-8 px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-                <div className="md:flex md:items-end md:justify-between">
+        <section className=" mx-4 lg:mx-auto lg:max-w-screen-xl rounded-lg mt-8 text-zinc-950 ring-1 ring-amber-500">
+            <div className="px-4 py-4 lg:px-8 lg:py-8">
+                <div className="m-8 md:flex md:items-end md:justify-between">
                 <div className="max-w-xl">
-                    <h2 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">
+                    <h2 className="font-extralight font-raleway tracking-tight text-5xl sm:text-5xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl" data-aos='zoom-out-up'>
                     Read trusted reviews from our customers
                     </h2>
 
-                    <p className="mt-6 max-w-lg leading-relaxed text-slate-200">
+                    <p className="mt-6 max-w-lg leading-relaxed" data-aos='fade-down'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus
                     sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat,
                     autem harum dolore reprehenderit quis! Quo totam dignissimos earum.
@@ -21,7 +29,7 @@ export default function Reviews()
 
                 <a
                     href="#"
-                    className="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-rose-600 px-5 py-3 text-rose-600 transition hover:bg-rose-600 hover:text-white md:mt-0"
+                    className="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-amber-500 px-5 py-3 text-amber-500 transition hover:bg-amber-500 hover:text-white md:mt-0"
                 >
                     <span className="font-medium"> Read all reviews </span>
 
@@ -45,7 +53,7 @@ export default function Reviews()
                 <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
                 <blockquote className="rounded-lg flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
                     <div>
-                    <div className="flex gap-0.5 text-green-500">
+                    <div className="flex gap-0.5 text-black">
                         <svg
                         className="h-5 w-5"
                         fill="currentColor"
@@ -103,7 +111,7 @@ export default function Reviews()
                     </div>
 
                     <div className="mt-4">
-                        <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Stayin' Alive</p>
+                        <p className="text-2xl font-bold text-amber-500 sm:text-3xl">Stayin' Alive</p>
 
                         <p className="mt-4 leading-relaxed text-gray-700">
                         No, Rose, they are not breathing. And they have no arms or legs … Where are they? You
@@ -120,7 +128,7 @@ export default function Reviews()
 
                 <blockquote className=" rounded-lg flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
                     <div>
-                    <div className="flex gap-0.5 text-green-500">
+                    <div className="flex gap-0.5 text-black">
                         <svg
                         className="h-5 w-5"
                         fill="currentColor"
@@ -178,7 +186,7 @@ export default function Reviews()
                     </div>
 
                     <div className="mt-4">
-                        <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Stayin' Alive</p>
+                        <p className="text-2xl font-bold text-amber-500 sm:text-3xl">Stayin' Alive</p>
 
                         <p className="mt-4 leading-relaxed text-gray-700">
                         No, Rose, they are not breathing. And they have no arms or legs … Where are they? You
@@ -195,7 +203,7 @@ export default function Reviews()
 
                 <blockquote className="rounded-lg flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
                     <div>
-                    <div className="flex gap-0.5 text-green-500">
+                    <div className="flex gap-0.5 text-black">
                         <svg
                         className="h-5 w-5"
                         fill="currentColor"
@@ -253,7 +261,7 @@ export default function Reviews()
                     </div>
 
                     <div className="mt-4">
-                        <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Stayin' Alive</p>
+                        <p className="text-2xl font-bold text-amber-500 sm:text-3xl">Stayin' Alive</p>
 
                         <p className="mt-4 leading-relaxed text-gray-700">
                         No, Rose, they are not breathing. And they have no arms or legs … Where are they? You

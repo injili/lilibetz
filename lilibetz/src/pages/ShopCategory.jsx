@@ -1,12 +1,14 @@
 import all_products from "../components/assets/all_products";
 import Item from "../components/Item"
+// import { useContext } from "react"
+// import ShopContext from "../context/ShopContext"
 
 const ShopCategory = (props) => {
     return (
             <section>
                 <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                     <header>
-                    <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Product Collection</h2>
+                    <h2 className="text-5xl sm:text-5xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl block">{props.category}s</h2>
 
                     <p className="mt-4 max-w-md text-gray-500">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
@@ -322,3 +324,21 @@ const ShopCategory = (props) => {
 }
 
 export default ShopCategory
+
+// const ShopCategory = (props) => {
+//     const { all_products } = useContext(ShopContext);
+//     return (
+//         <div>
+//             {all_products.map((item,i)=>{
+//                 if (props.category===item.category) {
+//                     return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price}/>
+//                 }
+//                 else{
+//                     return null
+//                 }
+//             })}
+//         </div>
+//     )
+// }
+
+// export default ShopCategory;

@@ -1,12 +1,13 @@
 import all_products from "../components/assets/all_products";
-import Item from "../components/Item"
+import Item from "../components/Item";
+import { Link } from "react-router-dom";
 
 export default function Shop() {
     return (
         <section>
                 <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                     <header>
-                    <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Product Collection</h2>
+                    <h2 className="text-5xl sm:text-5xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl block">Product Collection</h2>
 
                     <p className="mt-4 max-w-md text-gray-500">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
@@ -40,10 +41,10 @@ export default function Shop() {
 
                             <select id="SortBy" className="mt-1 rounded border-gray-300 text-sm">
                                 <option>Sort By</option>
-                                <option value="Title, DESC">Title, DESC</option>
-                                <option value="Title, ASC">Title, ASC</option>
-                                <option value="Price, DESC">Price, DESC</option>
-                                <option value="Price, ASC">Price, ASC</option>
+                                <option value="Title, DESC"><Link to={'/dining'}>Dining Sets</Link></option>
+                                <option value="Title, ASC"><Link to={'/beds'}>Beds</Link></option>
+                                <option value="Price, DESC"><Link to={'/sofas'}>Sofas</Link></option>
+                                <option value="Price, ASC"><Link to={'/tables'}>Tables</Link></option>
                             </select>
                             </div>
 
