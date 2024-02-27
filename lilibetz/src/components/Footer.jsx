@@ -1,5 +1,6 @@
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import bigLogo from './assets/img/name.jpg';
 
 export default function Footer() {
     return (
@@ -8,7 +9,7 @@ export default function Footer() {
                 <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
                     <div class="flex justify-left text-5xl text-amber-500 lg:justify-left">
-                        <Link to={'/'}>Lilibetz</Link>
+                        <Link to={'/'}><img className='h-12' src={bigLogo} /></Link>
                     </div>
 
                     <p class="mt-6 max-w-md text-center leading-relaxed  text-slate-100 sm:max-w-xs sm:text-left">

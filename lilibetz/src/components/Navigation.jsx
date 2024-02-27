@@ -4,14 +4,18 @@ import { IoIosSearch, IoMdMailOpen } from "react-icons/io";
 import { FaFacebook, FaWhatsapp, FaInstagram, FaShoppingCart, FaPhone } from "react-icons/fa";
 import { MdMenuOpen } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import bigLogo from './assets/img/name.jpg';
+import smallLogo from './assets/img/small.png';
 
 export default function Navigation()
 {
     return (
-      <div className='sticky top-0 relative z-50 py-4 sm:py-4 md:py-4 lg:py-8 xl:py-8 2xl-8 mx-8'>
+      <div className='sticky top-0 relative z-40 py-4 sm:py-4 md:py-4 lg:py-8 xl:py-8 2xl-8 mx-8'>
         <nav className="bg-zinc-950 py-4 rounded-lg">
           <div className="container mx-auto flex justify-between items-center ">
-            <Link to='/' className="ml-4 text-slate-50 text-lg font-semibold">Lilibetz</Link>
+            <Link to='/' className="ml-4">
+              <img className='h-12 hidden md:block' alt='lilibetz logo' src={bigLogo}/>
+              <img className='h-8 w-20 md:hidden' src={smallLogo} alt="lilibetz logo" /></Link>
             <TextInput className='mx-4' id="search" type="text" icon={IoIosSearch} placeholder="Search" />
             {/* <ul className='flex hidden md:hidden sm:hidden space-x-4'>
               <li><a href="#" className="text-black text-2xl hover:text-gray-300"><FaInstagram /></a></li>
