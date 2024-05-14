@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         phudu: ['Phudu', 'sans-serif'],
         jost: ['Jost', 'sans-serif'],
-        raleway: ['Raleway', 'sans-serif']
+        raleway: ['Raleway', 'sans-serif'],
+        DMsans: ['DM Sans', 'sans-serif']
       }
     },
   },
