@@ -1,9 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    'node_modules/flowbite-react/lib/esm/**/*.js',
+  ],
   theme: {
-    extend: {},
+    extend: {      
+      fontFamily: {
+        phudu: ['Phudu', 'sans-serif'],
+        jost: ['Jost', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif']
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'),
+  ],
 }
-
