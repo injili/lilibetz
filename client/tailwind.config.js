@@ -9,8 +9,7 @@ export default {
       fontFamily: {
         phudu: ['Phudu', 'sans-serif'],
         jost: ['Jost', 'sans-serif'],
-        raleway: ['Raleway', 'sans-serif'],
-        DMsans: ['DM Sans', 'sans-serif']
+        raleway: ['Raleway', 'sans-serif']
       }
     },
   },
@@ -18,3 +17,4 @@ export default {
     require('flowbite/plugin'),
   ],
 }
+
