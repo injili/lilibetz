@@ -1,9 +1,12 @@
+import Hero from "./components/hero";
+import Navigation from "./components/navigation";
+
 function App() {
   return (
-    <>
-      <div>
-      </div>
-    </>
+    <div className="font-DMsans text-zinc-950 bg-stone-100">
+      <Navigation/>
+      <Hero/>
+    </div>
   )
 }
 
