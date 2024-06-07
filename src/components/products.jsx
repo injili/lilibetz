@@ -1,18 +1,25 @@
-
+import pSection from '../pSection.json'
+import ImageList from './imageList';
 
 function Products() {
+
+    const resolvedImagesData = pSection.map(image => ({
+        ...image,
+        src: require(`${image.src}`).default
+    }));
     return (
-        <div>
-            <div className="">
-                <h2>OUR PRODUCTS</h2>
-                <button>Explore All</button>
+        <div className="mx-24 my-24">
+            <div className="flex justify-between items-center">
+                <h2 className="text-3xl font-semibold">Our Products</h2>
+                <button className="text-2xl font-semibold">Explore All</button>
             </div>
-            <div>
+            <ImageList images={resolvedImagesData} />
+            {/* <div className="flex justify-between items-center">
                 <div>
-                    <img src="" alt="" />
+                    <img className="rounded-lg" src="" alt="" />
                     <h3></h3>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

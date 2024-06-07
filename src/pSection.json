@@ -1,0 +1,22 @@
+[
+    {
+        "src": "../assets/img/bed.jpg",
+        "alt": "The Beds Category",
+        "category": "Beds"
+    },
+    {
+        "src": "../assets/img/dining.jpg",
+        "alt": "The Dining Set Category",
+        "category": "Dining"
+    },
+    {
+        "src": "../assets/img/sofa.jpg",
+        "alt": "The Sofas Category",
+        "category": "Sofas"
+    },
+    {
+        "src": "../assets/img/coffee",
+        "alt": "The Coffee Tables",
+        "category": "Coffeee Tables"
+    }
+]
