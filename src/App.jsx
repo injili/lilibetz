@@ -1,15 +1,40 @@
-import Footer from "./components/footer";
-import Hero from "./components/hero";
-import Navigation from "./components/navigation";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  Outlet
+} from 'react-router-dom';
 
-function App() {
+import Footer from "./components/footer";
+import Navigation from "./components/navigation";
+import Home from './pages/Home';
+
+const Layout = () => {
   return (
     <div className="font-DMsans text-zinc-950 bg-stone-100">
-      <Navigation/>
-      <Hero/>
-      <Footer/>
+      <Navigation />
+      <Outlet />
+      <Footer />
+    </div>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element:<Layout/>,
+    children:[
+      {
+        path: '/',
+        element: <Home/>
+      }
+    ]
+  }
+])
+
+export default function App() {
+  return (
+    <div className="">
+      <RouterProvider router={router}/>
     </div>
   )
 }
-
-export default App;
