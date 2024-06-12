@@ -9,6 +9,8 @@ export default {
       fontFamily: {
         DMsans: ['DM Sans', 'sans-serif'],
         pacifico: ['Pacifico', 'cursive'],
+        bowldyOneSC: ['Bowlby One SC', 'sans-serif'],
+        alata: ['Alata', 'sans-serif']
       },
       animation: {
         marquee: 'marquee 15s linear infinite',

@@ -1,51 +1,109 @@
 import heroImage from '../assets/img/hero.jpg';
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { motion } from 'framer-motion';
+
+//Variants
+const banner = {
+    animate: {
+        transition: {
+            delayChildren: 0.1,
+            staggerChildren: 0.5,
+        },
+    },
+};
+
+const fromLeft = {
+    initial: {
+        x: 2000,
+    },
+    animate: {
+        x: 0,
+        transition: {
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1,
+        }
+    }
+}
+
+const fromRight = {
+    initial: {
+        x: -1000,
+    },
+    animate: {
+        x: 0,
+        transition: {
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1,
+        }
+    }
+}
+
+const fromBottom = {
+    initial: {
+        y: 1000,
+    },
+    animate: {
+        y: 0,
+        transition: {
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1,
+        }
+    }
+}
 
 
 function Hero() {
     return (
-        <div>
+        <motion.div variants={banner} initial="initial" animate="animate">
             <div className="flex px-4 lg:px-24 flex-wrap gap-y-4 md:gap-x-24 items-center">
-                <span className="font-semibold leading-none lg:text-[200px] text-8xl">bespoke</span>
-                <span className="md:max-w-60 md:font-semibold text-normal text-sm md:text-right">
+                <motion.span variants={fromLeft} className="font-b leading-none lg:text-[200px] text-8xl font-bowldyOneSC">bespoke</motion.span>
+                <motion.span variants={fromLeft} className="md:max-w-72 md:font-medium text-normal text-sm md:text-right font-alata">
                     <p>Lorem ipsum dolor sit amet,  
                        Suspendisse rhoncus metus et ante dictum tempus
                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       et ante dictum tempus.  et ante dictum
                     </p>
-                </span>
-                <div className='hidden md:block'>
+                </motion.span>
+                <motion.div variants={fromLeft} className='hidden md:block'>
                     <div className='flex text-2xl gap-4'>
                         <FaInstagram/>
                         <FaFacebookF/>
                         <FaWhatsapp/>
                     </div>
-                </div>
+                </motion.div>
             </div>
-            <div className="z-10 relative flex overflow-x-hidden overflow-y-hidden">
+            <motion.div variants={fromLeft} className="z-10 relative flex overflow-x-hidden overflow-y-hidden">
                 <div className="py-0 animate-marquee whitespace-nowrap">
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
                 </div>
 
                 <div className="absolute top-0 py-0 animate-marquee2 whitespace-nowrap">
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
+                    <span className=" font-bowldyOneSC leading-none lg:text-[230px] text-8xl md:mx-24 mx-8">interior</span>
                 </div>
-            </div>
+            </motion.div>
             <div className="flex justify-center items-center lg:gap-44"> 
-                    <button className='text-zinc-200 text-lg bg-zinc-950 rounded-full h-44 w-44 hidden lg:block'>Scroll Down</button>
-                    <span className="font-semibold leading-none lg:text-[230px] text-8xl">decor</span>
+                    <motion.div variants={fromRight}>
+                        <motion.button 
+                            whileHover={{ scale: 1.2 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            className='text-zinc-200 text-lg bg-amber-400 font-alata text-zinc-950 font-extrabold rounded-full h-44 w-44 hidden lg:block'>
+                                View Products
+                        </motion.button>
+                    </motion.div>
+                    <motion.span variants={fromLeft} className="font-bowldyOneSC leading-none lg:text-[230px] text-8xl">decor</motion.span>
             </div>
-            <div className='flex justify-center mx-4 my-2 md:my-8'>
-                <img src={heroImage} alt="this" className='rounded-lg'/>
-            </div>
-        </div>
+            <motion.div variants={fromBottom}>
+                <img src={heroImage} alt="this" className='w-full'/>
+            </motion.div>
+        </motion.div>
     );
 }
 
