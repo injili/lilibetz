@@ -54,21 +54,32 @@ const fromBottom = {
 
 function Hero() {
     return (
-        <motion.div variants={banner} initial="initial" animate="animate">
+        <motion.div variants={banner} initial="initial" animate="animate" className=' text-zinc-100'>
             <div className="flex px-4 lg:px-24 flex-wrap gap-y-4 md:gap-x-24 items-center">
                 <motion.span variants={fromLeft} className="font-b leading-none lg:text-[200px] text-8xl font-bowldyOneSC">bespoke</motion.span>
                 <motion.span variants={fromLeft} className="md:max-w-72 md:font-medium text-normal text-sm md:text-right font-alata">
-                    <p>Lorem ipsum dolor sit amet,  
-                       Suspendisse rhoncus metus et ante dictum tempus
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       et ante dictum tempus.  et ante dictum
+                    <p>LOREM IPSUM DOLOR SIT AMET, SUSPENDISSE RHONCUS METUS ET ANTE DICTUM
+                         TEMPUS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. ET
+                          ANTE DICTUM TEMPUS. ET ANTE DICTUM.
                     </p>
                 </motion.span>
                 <motion.div variants={fromLeft} className='hidden md:block'>
                     <div className='flex text-2xl gap-4'>
-                        <FaInstagram/>
-                        <FaFacebookF/>
-                        <FaWhatsapp/>
+                        <motion.div
+                            whileHover={{ scale: 1.5 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                                <FaInstagram/>
+                        </motion.div>
+                        <motion.div
+                            whileHover={{ scale: 1.5 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                                <FaFacebookF/>
+                        </motion.div>
+                        <motion.div
+                            whileHover={{ scale: 1.5 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                                <FaWhatsapp/>
+                        </motion.div>
                     </div>
                 </motion.div>
             </div>

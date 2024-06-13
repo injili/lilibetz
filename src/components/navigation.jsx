@@ -24,11 +24,24 @@ const fromTop = {
     }
 }
 
+const fromLeft = {
+    initial: {
+        x: -2000,
+    },
+    animate: {
+        x: 0,
+        transition: {
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 1,
+        }
+    }
+}
+
 function Navigation(){
     return(
-        <motion.div variants={navigate} initial="initial" animate="animate" className="z-40 font-alata sticky top-0 bg-stone-100 backdrop-filter backdrop-blur-md bg-opacity-40">
+        <motion.div variants={navigate} initial="initial" animate="animate" className="z-40 font-alata sticky top-0 bg-zinc-950 backdrop-filter backdrop-blur-md bg-opacity-40">
             <nav className="mx-4 py-4">
-                <div className="flex flex-wrap justify-between items-center">
+                <div className="flex flex-wrap text-zinc-100 justify-between items-center">
                     <motion.div variants={fromTop} className="text-2xl lg:text-xl xl:text-2xl 2xl:text-4xl md:px-8">
                         <h1><span className="text-amber-400 font-pacifico font-medium">Lilibetz</span>  <span className="font-extrabold">FURNITURE</span></h1>
                     </motion.div>
@@ -44,9 +57,10 @@ function Navigation(){
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">YARD</motion.li>
                         </ul>
                     </div>
+                    
                 </div>
             </nav>
-            <hr className="mx-4"/>
+            <motion.hr variants={fromLeft} />
         </motion.div>
     )
 }
