@@ -42,7 +42,7 @@ function Navigation(){
         <motion.div variants={navigate} initial="initial" animate="animate" className="z-40 font-alata sticky top-0 bg-zinc-950 backdrop-filter backdrop-blur-md bg-opacity-40">
             <nav className="mx-4 py-4">
                 <div className="flex flex-wrap text-zinc-100 justify-between items-center">
-                    <motion.div variants={fromTop} className="text-2xl lg:text-xl xl:text-2xl 2xl:text-4xl md:px-8">
+                    <motion.div variants={fromTop} className="text-3xl lg:text-xl xl:text-2xl 2xl:text-4xl md:px-8">
                         <h1><span className="text-amber-400 font-pacifico font-medium">Lilibetz</span>  <span className="font-extrabold">FURNITURE</span></h1>
                     </motion.div>
                     <button className="block md:hidden text-2xl" type="button" data-collapse-toggle="navbar-default" aria-controls="navbar-default" aria-expanded="false">
@@ -60,7 +60,7 @@ function Navigation(){
                     
                 </div>
             </nav>
-            <motion.hr variants={fromLeft} />
+            <motion.hr variants={fromLeft} className="hidden md:block"/>
         </motion.div>
     )
 }
