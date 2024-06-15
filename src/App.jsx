@@ -10,7 +10,7 @@ import Home from './pages/Home';
 
 const Layout = () => {
   return (
-    <div className="text-zinc-950 bg-zinc-950">
+    <div className="text-zinc-950 cursor-pointer bg-zinc-950">
       <Navigation />
       <Outlet />
       <Footer />

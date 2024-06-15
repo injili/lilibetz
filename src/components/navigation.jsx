@@ -24,22 +24,22 @@ const fromTop = {
     }
 }
 
-const fromLeft = {
-    initial: {
-        x: -2000,
-    },
-    animate: {
-        x: 0,
-        transition: {
-            ease: [0.6, 0.01, -0.05, 0.95],
-            duration: 1,
-        }
-    }
-}
+// const fromLeft = {
+//     initial: {
+//         x: -2000,
+//     },
+//     animate: {
+//         x: 0,
+//         transition: {
+//             ease: [0.6, 0.01, -0.05, 0.95],
+//             duration: 1,
+//         }
+//     }
+// }
 
 function Navigation(){
     return(
-        <motion.div variants={navigate} initial="initial" animate="animate" className="z-40 font-alata sticky top-0 bg-zinc-950 backdrop-filter backdrop-blur-md bg-opacity-40">
+        <motion.div variants={navigate} initial="initial" animate="animate" className="z-40 font-alata absolute w-full  top-0 bg-zinc-950 backdrop-filter backdrop-blur-md bg-opacity-40">
             <nav className="mx-4 py-4">
                 <div className="flex flex-wrap text-zinc-100 justify-between items-center">
                     <motion.div variants={fromTop} className="text-3xl lg:text-xl xl:text-2xl 2xl:text-4xl md:px-8">
@@ -60,7 +60,7 @@ function Navigation(){
                     
                 </div>
             </nav>
-            <motion.hr variants={fromLeft} className="hidden md:block"/>
+            {/*   */}
         </motion.div>
     )
 }
