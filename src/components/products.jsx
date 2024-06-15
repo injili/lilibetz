@@ -8,7 +8,7 @@ export default function Products() {
     return(
         <div className="p-1 bg-amber-400">
             <div className="text-center">
-                <h2 className="leading-none lg:text-[200px] text-7xl font-bowldyOneSC">products</h2>
+                <h2 className="leading-none lg:text-[100px] text-7xl font-bowldyOneSC">products</h2>
             </div>
             <ul className="mt-2 grid grid-cols-1 gap-1 lg:grid-cols-3">
                 <li>
