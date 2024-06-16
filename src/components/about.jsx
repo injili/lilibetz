@@ -26,7 +26,7 @@ const fromBottom = {
 function About() {
     return (
         <motion.div variants={bout} initial="initial" animate="animate" className="relative text-zinc-100">
-            <motion.div variants={fromBottom} className="h-screen w-full overflow-hidden flex">
+            <motion.div variants={fromBottom} className="h-96 w-full overflow-hidden flex">
                 <div className="flex flex-col absolute inset-0 items-center justify-center">
                     <h2 className="font-bowldyOneSC lg:text-[200px] text-5xl leading-none">ABOUT US</h2>
                     <hr className="w-5/6 mb-8"/>

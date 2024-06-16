@@ -28,7 +28,7 @@ const fromBottom = {
 export default function Footer() {
     return (
         <div>
-            <motion.div variants={foot} initial="initial" animate="animate" className="m-4 p-8 bg-zinc-950 text-zinc-50 rounded-lg">
+            <motion.div variants={foot} initial="initial" animate="animate" className="overflow-hidden m-4 p-8 bg-zinc-950 text-zinc-50 rounded-lg">
                 <div className="flex flex-wrap items-center justify-between  gap-y-4">
                     <span className="flex items-center gap-4 text-xl lg:text-xl xl:text-2xl 2xl:text-4xl font-semibold">
                         <div>

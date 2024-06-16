@@ -43,13 +43,13 @@ const fromRight = {
 
 const fromBottom = {
     initial: {
-        y: 1000,
+        y: -1000,
     },
     animate: {
         y: 0,
         transition: {
             ease: [0.6, 0.01, -0.05, 0.95],
-            duration: 1,
+            duration: 2.5,
         }
     }
 }
