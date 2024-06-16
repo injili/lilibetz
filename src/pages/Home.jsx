@@ -1,6 +1,5 @@
 import Hero from "../components/hero";
 import Products from "../components/products";
-import About from "../components/about";
 import Contacts from "../components/contact";
 
 export default function Home() {
@@ -8,7 +7,6 @@ export default function Home() {
         <div>
             <Hero/>
             <Products/>
-            <About/>
             <Contacts/>
         </div>
     );
