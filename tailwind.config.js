@@ -6,11 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        neo: '-10px 10px 29px #bebebe, 10px -10px 29px #ffffff',
+      },
       fontFamily: {
         DMsans: ['DM Sans', 'sans-serif'],
         pacifico: ['Pacifico', 'cursive'],
         bowldyOneSC: ['Bowlby One SC', 'sans-serif'],
-        alata: ['Alata', 'sans-serif']
+        alata: ['Alata', 'sans-serif'],
+        poiretOne: ['Poiret One', 'sans-serif']
       },
       animation: {
         marquee: 'marquee 15s linear infinite',
