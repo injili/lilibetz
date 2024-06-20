@@ -13,7 +13,8 @@ const products = [
         alt: "The sofas",
         description: "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
         src: Sofa,
-        color: "#F2F0E4"
+        color: "#fbbf24",
+        tcolor: "#ffffff"
     },
     {
         id: 2,
@@ -21,7 +22,8 @@ const products = [
         alt: "The Dining Sets",
         description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rockyyryey.",
         src: Dining,
-        color: "#F28705"
+        color: "#e5e5e5",
+        tcolor: "#242424"
     },
     {
         id: 3,
@@ -29,7 +31,8 @@ const products = [
         alt: "The coffee tables",
         description: "Though he views photography as a medium for san ambiguity—a certain tension—that lets the viewer find their own story within them.",
         src: Coffee,
-        color: "#F25C05"
+        color: "#fbbf24",
+        tcolor: "#ffffff"
     },
     {
         id: 4,
@@ -37,7 +40,8 @@ const products = [
         alt: "The Beds",
         description: "Though he views photography as a medium for san ambiguity—a certain tension—that lets the viewer find their own story within them.",
         src: Bed,
-        color: "#F2F0E4"
+        color: "#e5e5e5",
+        tcolor: "#242424"
     },
   ]
 
