@@ -3,6 +3,7 @@ import Products from "../components/products";
 import Contacts from "../components/contact";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import About from "../components/about";
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
     return (
         <div>
             <Hero/>
+            <About/>
             <Products/>
             <Contacts/>
         </div>
