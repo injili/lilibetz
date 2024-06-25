@@ -13,20 +13,20 @@ export const Card = ({ product, i, progress, range, targetScale }) => {
     const scale = useTransform(progress, range, [1, targetScale]);
 
     return (
-        <div ref={container} className='h-screen flex items-center justify-center sticky top-0'>
+        <div ref={container} className='h-screen flex items-center justify-center sticky top-0 md:top-0'>
             <motion.div
                 style={{backgroundColor: product.color, scale, top:`calc(-5vh + ${i * 25}px)`}}
-                className='flex flex-row gap-0 p-8 rounded-sm relative h-3/4 w-4/5'
+                className='flex flex-col lg:flex-row gap-4 lg:gap-0 lg:p-8 rounded-sm relative h-3/4 lg:h-auto w-10/12'
                 >
-                <div className='aspect-square w-full h-full relative overflow-hidden rounded-sm'>
-                    <motion.div style={{scale: imageScale}} className='h-ful w-full'>
+                <div className='h-8/12 md:h-3/4 lg:h-full relative overflow-hidden rounded-sm'>
+                    <motion.div style={{scale: imageScale}} className='h-full w-full'>
                         <img src={product.src} alt={product.alt} className='object-cover'/>
                     </motion.div>
                 </div>
-                <div className='p-8 flex flex-col items-start justify-center'
+                <div className='p-2 md:p-4 lg:p-8 flex flex-col items-start justify-center'
                 style={{color: product.tcolor,}}>
-                    <h3 className='py-8 font-bowldyOneSC text-[100px] leading-none'>{product.title}</h3>
-                    <p className='text-bold font-alata'>{product.description}</p>
+                    <h3 className='lg:py-8 font-bowldyOneSC text-5xl lg:text-[100px] leading-none'>{product.title}</h3>
+                    <p className='text-bold font-alata text-lg'>{product.description}</p>
                 </div>
             </motion.div>
         </div>

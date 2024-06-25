@@ -60,8 +60,8 @@ function Hero() {
             >
             <div className="flex flex-col relative items-center justify-center ">
                 <div className="flex flex-wrap px-4 lg:px-24 gap-y-1 md:gap-x-24 items-center w-screen justify-center">
-                    <motion.span variants={fromLeft} className="leading-none lg:text-[200px] md:text-[150px] text-7xl font-bowldyOneSC z-0">bespoke</motion.span>
-                    <motion.span variants={fromLeft} className="md:max-w-72 md:font-medium text-normal text-sm md:text-right font-alata">
+                    <motion.span variants={fromLeft} className="leading-none lg:text-[200px] md:text-[150px] text-7xl font-bowldyOneSC z-10 md:z-0">bespoke</motion.span>
+                    <motion.span variants={fromLeft} className="lg:max-w-72 md:font-medium text-normal text-sm lg:text-right text-center font-alata z-20">
                         <p>LOREM IPSUM DOLOR SIT AMET, SUSPENDISSE RHONCUS METUS ET ANTE DICTUM
                             TEMPUS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. ET
                             ANTE DICTUM TEMPUS. ET ANTE DICTUM.
@@ -87,7 +87,7 @@ function Hero() {
                         </div>
                     </motion.div>
                 </div>
-                <motion.img variants={fromBottom} src={imageThingy} alt="the chair" className="absolute w-[550px] z-10" />
+                <motion.img variants={fromBottom} src={imageThingy} alt="the chair" className="absolute w-[350px] lg:w-[550px] z-0 md:z-10" />
                 <motion.div variants={fromLeft} className="z-10 relative flex overflow-x-hidden overflow-y-hidden">
                     <div className="py-0 animate-marquee whitespace-nowrap">
                         <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>

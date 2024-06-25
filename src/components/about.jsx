@@ -35,7 +35,7 @@ const About = () => {
                 }}
                 transition={{ ease: "backOut", duration: 0.0 }}
             >
-                <p className="font-alata text-7xl text-center font-semibold px-44"
+                <p className="font-alata text-4xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
@@ -43,7 +43,7 @@ const About = () => {
                 </p>
             </motion.div>
             <div>
-                <p className="font-alata text-7xl text-center font-semibold px-44">
+                <p className="font-alata text-4xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44">
                     Mauris id sapien dui. <span className="text-amber-400">Morbi nisi ante,</span> convallis in lacus in, tempor cursus tellus. Aenean porttitor, lorem pretium tincidunt egestas, odio quam pulvinar arcu.  pellentesque ultricies arcu nisl enim. 
                 </p>
             </div>
