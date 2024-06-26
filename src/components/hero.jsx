@@ -110,7 +110,7 @@ function Hero() {
                             <motion.button 
                                 whileHover={{ scale: 1.2 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                className='text-zinc-200 text-lg bg-amber-400 font-alata text-zinc-950 font-extrabold rounded-full h-44 w-44 hidden lg:block'>
+                                className='text-lg bg-amber-400 font-alata text-zinc-950 font-extrabold rounded-full h-44 w-44 hidden lg:block'>
                                     PRODUCTS
                             </motion.button>
                         </motion.div>

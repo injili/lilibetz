@@ -28,9 +28,9 @@ const fromBottom = {
 export default function Footer() {
     return (
         <div>
-            <motion.div variants={foot} initial="initial" animate="animate" className="relative h-44  mx-4 p-12 text-zinc-50" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}>
+            <motion.div variants={foot} initial="initial" animate="animate" className="relative h-44 md:mx-4 py-12  text-zinc-50" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}>
                 <div className="fixed bottom-0 h-44 w-full" >
-                    <div className="flex flex-row h-44 items-center justify-center gap-x-32">
+                    <div className="flex flex-col lg:flex-row h-44 w-full items-center justify-center md:gap-x-32">
                         <span className="flex items-center gap-4 text-xl lg:text-xl xl:text-2xl 2xl:text-4xl font-semibold">
                             <div>
                                 <motion.h1 variants={fromBottom}>

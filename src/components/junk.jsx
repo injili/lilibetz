@@ -31,3 +31,17 @@
                         <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
                     </div>
                 </motion.div> */}
+
+
+// const fromLeft = {
+//     initial: {
+//         x: -2000,
+//     },
+//     animate: {
+//         x: 0,
+//         transition: {
+//             ease: [0.6, 0.01, -0.05, 0.95],
+//             duration: 1,
+//         }
+//     }
+// }
