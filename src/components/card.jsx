@@ -13,13 +13,13 @@ export const Card = ({ product, i, progress, range, targetScale }) => {
     const scale = useTransform(progress, range, [1, targetScale]);
 
     return (
-        <div ref={container} className='h-screen flex items-center justify-center sticky top-0 md:top-0'>
+        <div ref={container} className='h-screen flex items-center justify-center sticky top-0'>
             <motion.div
                 style={{backgroundColor: product.color, scale, top:`calc(-5vh + ${i * 25}px)`}}
-                className='flex flex-col lg:flex-row gap-4 lg:gap-0 lg:p-8 rounded-sm relative h-3/4 lg:h-auto w-10/12'
+                className='flex flex-col lg:flex-row gap-4 lg:gap-0 lg:p-8 rounded-sm relative h-3/4 lg:h-auto lg:max-h-[800px] w-10/12 lg:w-9/12'
                 >
-                <div className='h-8/12 md:h-3/4 lg:h-full relative overflow-hidden rounded-sm'>
-                    <motion.div style={{scale: imageScale}} className='h-full w-full'>
+                <div className='h-8/12 md:h-3/4 lg:h-full lg:max-h-[740px] relative overflow-hidden rounded-sm'>
+                    <motion.div style={{scale: imageScale}} className='h-full lg:max-h-[740px] w-full'>
                         <img src={product.src} alt={product.alt} className='object-cover'/>
                     </motion.div>
                 </div>
