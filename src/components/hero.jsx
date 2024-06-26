@@ -2,6 +2,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import imageThingy from '../assets/img/file.png'
+import ParallaxText from "./parallax";
 // import hero from '../assets/img/hero.jpg';
 
 //Variants
@@ -41,9 +42,22 @@ const fromRight = {
 }
 
 
-const fromBottom = {
+const fromTop = {
     initial: {
         y: -1000,
+    },
+    animate: {
+        y: 0,
+        transition: {
+            ease: [0.6, 0.01, -0.05, 0.95],
+            duration: 2.5,
+        }
+    }
+}
+
+const fromBottom = {
+    initial: {
+        y: 1000,
     },
     animate: {
         y: 0,
@@ -87,23 +101,9 @@ function Hero() {
                         </div>
                     </motion.div>
                 </div>
-                <motion.img variants={fromBottom} src={imageThingy} alt="the chair" className="absolute w-[350px] lg:w-[550px] z-0 md:z-10" />
-                <motion.div variants={fromLeft} className="z-10 relative flex overflow-x-hidden overflow-y-hidden">
-                    <div className="py-0 animate-marquee whitespace-nowrap">
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                    </div>
-
-                    <div className="absolute top-0 py-0 animate-marquee2 whitespace-nowrap">
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                        <span className=" font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl md:mx-24 mx-8">interior</span>
-                    </div>
+                <motion.img variants={fromTop} src={imageThingy} alt="the chair" className="absolute w-[350px] lg:w-[550px] z-0 md:z-10" />
+                <motion.div variants={fromLeft} className="z-20">
+                    <ParallaxText baseVelocity={-5}> interior </ParallaxText>
                 </motion.div>
                 <div className="flex md:justify-center items-center lg:gap-20 mx-4"> 
                         <motion.div variants={fromRight}>
@@ -117,24 +117,30 @@ function Hero() {
                         <motion.span variants={fromLeft} className="font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl z-0">decor</motion.span>
                 </div>
             </div>
-            <motion.div variants={fromBottom} className="flex flex-col w-4 absolute my-12 bottom-8 right-8 md:right-16 block lg:hidden">
-                    <motion.p 
-                        whileHover={{ scale: 1.2 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className='text-lg leading-none font-alata text-zinc-100 font-extrabold -rotate-90'>
-                            SCROLL DOWN
-                    </motion.p>
-                    <FaArrowDown/>
-            </motion.div>
+            <div className="flex absolute bottom-12">
+                    <motion.div variants={fromBottom} className='block md:hidden'>
+                        <div className='flex text-2xl gap-4'>
+                            <motion.div
+                                whileHover={{ scale: 1.5 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                                    <FaInstagram/>
+                            </motion.div>
+                            <motion.div
+                                whileHover={{ scale: 1.5 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                                    <FaFacebookF/>
+                            </motion.div>
+                            <motion.div
+                                whileHover={{ scale: 1.5 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                                    <FaWhatsapp/>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+            </div>
+
         </motion.div>
     );
 }
 
 export default Hero;
-
-// style={{
-//     backgroundImage: `url(${hero})`,
-//     backgroundSize: 'cover',
-//     backgroundPosition: 'center',
-//     backgroundRepeat: 'no-repeat'
-// }}
