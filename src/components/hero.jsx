@@ -118,7 +118,7 @@ function Hero() {
                 </div>
             </div>
             <div className="flex absolute bottom-12">
-                    <motion.div variants={fromBottom} className='block md:hidden'>
+                    <motion.div variants={fromBottom} className='block lg:hidden'>
                         <div className='flex text-2xl gap-4'>
                             <motion.div
                                 whileHover={{ scale: 1.5 }}
