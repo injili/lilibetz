@@ -1,181 +1,181 @@
 [
     {
         "id":1,
-        "src": "./img/1.jpg",
+        "src": "../assets/img/1.jpg",
         "alt": "Image of our product",
         "loader": "LRIOOr?bE1xY_N_3V?Rl?bxvM{n$"
     },
     {
         "id":2,
-        "src": "./img/2.jpg",
+        "src": "../assets/img/2.jpg",
         "alt": "Image of our product",
         "loader": "LVI4eWOF%#m+tlxasmR*ysx]ogNH"
     },
     {
         "id":3,
-        "src": "./img/3.jpg",
+        "src": "../assets/img/3.jpg",
         "alt": "Image of our product",
         "loader": "LdJa.sMdIUj?_NIUWXs:?bRkM{f+"
     },
     {
         "id":4,
-        "src": "./img/4.jpg",
+        "src": "../assets/img/4.jpg",
         "alt": "Image of our product",
         "loader": "LFM*26009G9E4;Dh%1j[.AMxDiWB"
     },
     {
         "id":5,
-        "src": "./img/5.jpg",
+        "src": "../assets/img/5.jpg",
         "alt": "Image of our product",
         "loader": "LKM%$bRhyEbX.TkEV[M{?woye-oJ"
     },
     {
         "id":6,
-        "src": "./img/6.jpg",
+        "src": "../assets/img/6.jpg",
         "alt": "Image of our product",
         "loader": "LLJGHHyYF?N{.TEN#QNHuixb,oX9"
     },
     {
         "id":7,
-        "src": "./img/7.jpg",
+        "src": "../assets/img/7.jpg",
         "alt": "Image of our product",
         "loader": "LFD8^N2]}9AX%3t8R*oz%#$*OZsD"
     },
     {
         "id":8,
-        "src": "./img/8.jpg",
+        "src": "../assets/img/8.jpg",
         "alt": "Image of our product",
         "loader": "LZIOFLofWCxa~qt7ozt7x^odxtfl"
     },
     {
         "id":9,
-        "src": "./img/9.jpg",
+        "src": "../assets/img/9.jpg",
         "alt": "Image of our product",
         "loader": "LnKTY@M_XTR%?^M|jFjFt,oLn$j["
     },
     {
         "id":10,
-        "src": "./img/10.jpg",
+        "src": "../assets/img/10.jpg",
         "alt": "Image of our product",
         "loader": "LJNAh%.8T1IA~qM{MdtR?bRORPM{"
     },
     {
         "id":11,
-        "src": "./img/11.jpg",
+        "src": "../assets/img/11.jpg",
         "alt": "Image of our product",
         "loader": "LIFhxL170=tS~WJDOvK6%$r;ivJV"
     },
     {
         "id":12,
-        "src": "./img/12.jpg",
+        "src": "../assets/img/12.jpg",
         "alt": "Image of our product",
         "loader": "LpI#u.t7WXWY_NM{WBjYxuWVbIWV"
     },
     {
         "id":13,
-        "src": "./img/13.jpg",
+        "src": "../assets/img/13.jpg",
         "alt": "Image of our product",
         "loader": "LFHw_s*J7iD%04Di#6yDUHRm;1RP"
     },
     {
         "id":14,
-        "src": "./img/14.jpg",
+        "src": "../assets/img/14.jpg",
         "alt": "Image of our product",
         "loader": "L79i@_xu-=-A~BI=M|t7?b%2-CNt"
     },
     {
         "id":15,
-        "src": "./img/15.jpg",
+        "src": "../assets/img/15.jpg",
         "alt": "Image of our product",
         "loader": "L7FOr}0Lw0xt}@?HS^r?0fT200s;"
     },
     {
         "id":16,
-        "src": "./img/16.jpg",
+        "src": "../assets/img/16.jpg",
         "alt": "Image of our product",
         "loader": "LVG+O5~pW?NK?wM|IVW=yENIRkof"
     },
     {
         "id":17,
-        "src": "./img/17.jpg",
+        "src": "../assets/img/17.jpg",
         "alt": "Image of our product",
         "loader": "L9D0}s00%}H=*f8_IB%h-@RN$utn"
     },
     {
         "id":18,
-        "src": "./img/18.jpg",
+        "src": "../assets/img/18.jpg",
         "alt": "Image of our product",
         "loader": "LLIELwtlG^V^ETt6Mx-p7#V[^1bb"
     },
     {
         "id":19,
-        "src": "./img/19.jpg",
+        "src": "../assets/img/19.jpg",
         "alt": "Image of our product",
         "loader": "LELej3.70OIW?wE2a2Ft0=#pl9TK"
     },
     {
         "id":20,
-        "src": "./img/20.jpg",
+        "src": "../assets/img/20.jpg",
         "alt": "Image of our product",
         "loader": "L6F~myJ5Dj4m={WB4-x]0000%g_4"
     },
     {
         "id":21,
-        "src": "./img/21.jpg",
+        "src": "../assets/img/21.jpg",
         "alt": "Image of our product",
         "loader": "LmJR2MMxV]xb.TNHR*NH?HsosmV@"
     },
     {
         "id":22,
-        "src": "./img/22.jpg",
+        "src": "../assets/img/22.jpg",
         "alt": "Image of our product",
         "loader": "L5HUhF^h2c_N00%29FNM3BkV4T9u"
     },
     {
         "id":23,
-        "src": "./img/23.jpg",
+        "src": "../assets/img/23.jpg",
         "alt": "Image of our product",
         "loader": "LAFFv-00S#4o~V9axujI.8IwxtVs"
     },
     {
         "id":24,
-        "src": "./img/24.jpg",
+        "src": "../assets/img/24.jpg",
         "alt": "Image of our product",
         "loader": "LsHVi0NLNFV?~UaJWDW?-;V@s+n#"
     },
     {
         "id":25,
-        "src": "./img/25.jpg",
+        "src": "../assets/img/25.jpg",
         "alt": "Image of our product",
         "loader": "LeKnJB?bNHt7?^t6r?xuOso#V?M_"
     },
     {
         "id":26,
-        "src": "./img/26.jpg",
+        "src": "../assets/img/26.jpg",
         "alt": "Image of our product",
         "loader": "LWIOCL?w_3o#^*XTIUbc_3s:W;Ri"
     },
     {
         "id":27,
-        "src": "./img/27.jpg",
+        "src": "../assets/img/27.jpg",
         "alt": "Image of our product",
         "loader": "LHLg*84.NeIoGI?H-qVr~qXTIUtS"
     },
     {
         "id":28,
-        "src": "./img/28.jpg",
+        "src": "../assets/img/28.jpg",
         "alt": "Image of our product",
         "loader": "LDF;=[=qC7X-I9TLI9Vs8J9t-B-V"
     },
     {
         "id":29,
-        "src": "./img/29.jpg",
+        "src": "../assets/img/29.jpg",
         "alt": "Image of our product",
         "loader": "LQHotVVDRONG~V9GjYxW?I-iWBR-"
     },
     {
         "id":30,
-        "src": "./img/30.jpg",
+        "src": "../assets/img/30.jpg",
         "alt": "Image of our product",
         "loader": "LkKnME.9awMx.TtRt7ogESs*WDR*"
     }

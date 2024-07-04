@@ -7,6 +7,7 @@ import {
 import Footer from "./components/footer";
 import Navigation from "./components/navigation";
 import Home from './pages/Home';
+import Shop from './pages/Shop';
 
 const Layout = () => {
   return (
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
+      },
+      {
+        path: '/shop',
+        element: <Shop/>
       }
     ]
   }
