@@ -21,7 +21,9 @@ export default function Home() {
     return (
         <div>
             <Hero/>
-            <About/>
+            <section id="about">
+                <About/>
+            </section>
             <Products/>
             <Contacts/>
         </div>

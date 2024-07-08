@@ -26,6 +26,7 @@ const About = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full h-screen overflow-x-hidden bg-neutral-200">
             <motion.div
+                id="about"
                 className="mask h-screen w-full"
                 animate={{
                     WebkitMaskPosition: `${mousePosition.x - size / 2}px ${

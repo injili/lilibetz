@@ -16,17 +16,17 @@ export const Card = ({ product, i, progress, range, targetScale }) => {
         <div ref={container} className='h-screen flex items-center justify-center sticky top-0'>
             <motion.div
                 style={{backgroundColor: product.color, scale, top:`calc(-5vh + ${i * 25}px)`}}
-                className='flex flex-col lg:flex-row gap-4 lg:gap-0 lg:p-8 rounded-sm relative h-3/4 lg:h-auto lg:max-h-[800px] w-10/12 lg:w-9/12'
+                className='flex lg:p-4 rounded-md lg:rounded-sm relative h-3/4 lg:h-auto lg:max-h-[800px] w-10/12 lg:w-9/12'
                 >
-                <div className='h-8/12 md:h-3/4 lg:h-full lg:max-h-[740px] relative overflow-hidden rounded-sm'>
+                <div className='h-full lg:max-h-[740px] relative overflow-hidden rounded-md lg:rounded-sm '>
                     <motion.div style={{scale: imageScale}} className='h-full lg:max-h-[740px] w-full'>
-                        <img src={product.src} alt={product.alt} className='object-cover'/>
+                        <img src={product.src} alt={product.alt} className='object-cover h-full md:h-auto'/>
                     </motion.div>
                 </div>
-                <div className='p-2 md:p-4 lg:p-8 flex flex-col items-start justify-center'
-                style={{color: product.tcolor,}}>
-                    <h3 className='lg:py-8 font-bowldyOneSC text-5xl lg:text-[100px] leading-none'>{product.title}</h3>
-                    <p className='text-bold font-alata text-lg'>{product.description}</p>
+                <div className='absolute p-2 md:p-4 w-full h-full bg-neutral-950 backdrop-filter bg-opacity-10 flex flex-col items-center justify-center'
+                style={{color: product.color,}}>
+                    <h3 className='lg:py-8 font-bowldyOneSC text-6xl lg:text-[100px] leading-none text-center'>{product.title}</h3>
+                    <p className='font-semibold font-alata text-3xl text-center leading none lg:w-8/12'>{product.description}</p>
                 </div>
             </motion.div>
         </div>

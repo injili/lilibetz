@@ -1,4 +1,5 @@
 import { IoMenu } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 //Variants
@@ -50,7 +51,7 @@ function Navigation(){
                     </motion.button> */}
                     <div className="hidden md:block px-8"  id="navbar-default">
                         <ul className="flex space-x-4">
-                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">HOME</motion.li>
+                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg"><Link to="#about">HOME</Link></motion.li>
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">ABOUT</motion.li>
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">PRODUCTS</motion.li>
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">CONTACTS</motion.li>
