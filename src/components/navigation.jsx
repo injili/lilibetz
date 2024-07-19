@@ -32,18 +32,18 @@ function Navigation(){
             variants={navigate}
             initial="initial"
             animate="animate"
-            className="z-20 font-alata absolute w-full  top-0 bg-zinc-950 backdrop-filter backdrop-blur-md bg-opacity-40"
+            className="z-20 font-alata absolute w-full  top-0 bg-zinc-950"
             >
             <nav className="mx-4 py-4">
-                <div className="flex flex-wrap text-neutral-200 justify-between items-center">
+                <div className="flex flex-wrap text-neutral-200 justify-center md:justify-between items-center">
                     <div className="hidden md:block px-8"  id="navbar-default">
                         <ul className="flex space-x-4">
-                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg"><Link to="http://localhost:5173/#about">HOME</Link></motion.li>
-                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">ABOUT</motion.li>
+                            <Link to="/"><motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">HOME</motion.li></Link>
+                            <Link to="/products"><motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">PRODUCTS</motion.li></Link>
                         </ul>
                     </div>
                     <motion.div variants={fromTop} className="text-3xl lg:text-xl xl:text-2xl 2xl:text-4xl md:px-8">
-                        <h1><span className="text-amber-400 font-pacifico font-medium">Lilibetz</span>  <span className="font-bowldyOneSC ">FURNITURE</span></h1>
+                        <Link to="/"><h1><span className="text-amber-400 font-pacifico font-medium">Lilibetz</span>  <span className="font-bowldyOneSC ">FURNITURE</span></h1></Link>
                     </motion.div>
                     <div className="hidden md:block px-8"  id="navbar-default">
                         <ul className="flex space-x-4">

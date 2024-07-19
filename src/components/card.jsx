@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 export const Card = ({ product, i, progress, range, targetScale }) => {
@@ -25,7 +26,7 @@ export const Card = ({ product, i, progress, range, targetScale }) => {
                 </div>
                 <div className='absolute p-2 md:p-4 w-full h-full bg-neutral-950 backdrop-filter bg-opacity-10 flex flex-col items-center justify-center'
                 style={{color: product.color,}}>
-                    <h3 className='lg:py-8 font-bowldyOneSC text-6xl lg:text-[100px] leading-none text-center'>{product.title}</h3>
+                    <Link to='/products'><h3 className='lg:py-8 font-bowldyOneSC text-6xl lg:text-[100px] leading-none text-center'>{product.title}</h3></Link>
                     <p className='font-semibold font-alata text-3xl text-center leading none lg:w-8/12'>{product.description}</p>
                 </div>
             </motion.div>

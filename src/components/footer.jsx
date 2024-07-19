@@ -1,5 +1,6 @@
 import { FaRegCopyright } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const getFullYear = () => (new Date().getFullYear());
 
@@ -40,18 +41,21 @@ export default function Footer() {
                                 </motion.h1>
                             </div>
                         </span>
-                        <motion.div variants={fromBottom} className="flex flex-wrap items-center gap-2 text-sm">
+                        <motion.div variants={fromBottom} className="hidden lg:inline-flex flex justify-items-center items-center gap-2 text-sm">
+                            <FaRegCopyright/>
+                            <p> {getFullYear()} - Lilibetz FURNITURE from INJILI, with Love</p>
+                        </motion.div>
+                        <ul className="flex gap-2 md:gap-4 text-sm font-bold lg:gap-6">
+                            <Link to='/'></Link><motion.li variants={fromBottom}>HOME</motion.li>
+                            <Link to='/products'></Link><motion.li variants={fromBottom}>PRODUCTS</motion.li>
+                            <Link to='/'></Link><motion.li variants={fromBottom}>CONTACTS</motion.li>
+                            <Link to='/'></Link><motion.li variants={fromBottom}>YARD</motion.li>
+                        </ul>
+                        <motion.div variants={fromBottom} className="lg:hidden flex flex-wrap items-center gap-2 text-sm">
                             <FaRegCopyright/>
                             <p> {getFullYear()} - Lilibetz FURNITURE</p>
                             <p>from INJILI, with Love</p>
                         </motion.div>
-                        <ul className="flex gap-2 md:gap-4 text-sm font-bold lg:gap-6">
-                            <motion.li variants={fromBottom}>HOME</motion.li>
-                            <motion.li variants={fromBottom}>ABOUT</motion.li>
-                            <motion.li variants={fromBottom}>PRODUCTS</motion.li>
-                            <motion.li variants={fromBottom}>CONTACTS</motion.li>
-                            <motion.li variants={fromBottom}>YARD</motion.li>
-                        </ul>
                     </div>
                 </div>
             </motion.div>
