@@ -36,24 +36,17 @@ function Navigation(){
             >
             <nav className="mx-4 py-4">
                 <div className="flex flex-wrap text-neutral-200 justify-between items-center">
+                    <div className="hidden md:block px-8"  id="navbar-default">
+                        <ul className="flex space-x-4">
+                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg"><Link to="http://localhost:5173/#about">HOME</Link></motion.li>
+                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">ABOUT</motion.li>
+                        </ul>
+                    </div>
                     <motion.div variants={fromTop} className="text-3xl lg:text-xl xl:text-2xl 2xl:text-4xl md:px-8">
                         <h1><span className="text-amber-400 font-pacifico font-medium">Lilibetz</span>  <span className="font-bowldyOneSC ">FURNITURE</span></h1>
                     </motion.div>
-                    {/* <motion.button
-                        variants={fromTop}
-                        className="block md:hidden text-2xl"
-                        type="button"
-                        data-collapse-toggle="navbar-default"
-                        aria-controls="navbar-default"
-                        aria-expanded="false"
-                        >
-                        <IoMenu/>
-                    </motion.button> */}
                     <div className="hidden md:block px-8"  id="navbar-default">
                         <ul className="flex space-x-4">
-                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg"><Link to="#about">HOME</Link></motion.li>
-                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">ABOUT</motion.li>
-                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">PRODUCTS</motion.li>
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">CONTACTS</motion.li>
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">YARD</motion.li>
                         </ul>

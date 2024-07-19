@@ -11,7 +11,7 @@ import Shop from './pages/Shop';
 
 const Layout = () => {
   return (
-    <div className="text-zinc-950 cursor-pointer bg-zinc-950">
+    <div className="cursor-pointer bg-neutral-950">
       <Navigation />
       <Outlet />
       <Footer />

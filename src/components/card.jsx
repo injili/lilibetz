@@ -15,10 +15,10 @@ export const Card = ({ product, i, progress, range, targetScale }) => {
     return (
         <div ref={container} className='h-screen flex items-center justify-center sticky top-0'>
             <motion.div
-                style={{backgroundColor: product.color, scale, top:`calc(-5vh + ${i * 25}px)`}}
-                className='flex lg:p-4 rounded-md lg:rounded-sm relative h-3/4 lg:h-auto lg:max-h-[800px] w-10/12 lg:w-9/12'
+                style={{scale, top:`calc(-5vh + ${i * 30}px)`}}
+                className='flex lg:p-4 rounded-md lg:rounded-lg relative h-3/4 lg:h-auto lg:max-h-[800px] w-11/12 lg:w-9/12'
                 >
-                <div className='h-full lg:max-h-[740px] relative overflow-hidden rounded-md lg:rounded-sm '>
+                <div className='h-full lg:max-h-[740px] relative overflow-hidden rounded-md lg:rounde '>
                     <motion.div style={{scale: imageScale}} className='h-full lg:max-h-[740px] w-full'>
                         <img src={product.src} alt={product.alt} className='object-cover h-full md:h-auto'/>
                     </motion.div>

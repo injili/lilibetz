@@ -76,9 +76,9 @@ function Hero() {
                 <div className="flex flex-wrap px-4 lg:px-24 gap-y-1 md:gap-x-24 items-center w-screen justify-center">
                     <motion.span variants={fromLeft} className="leading-none lg:text-[200px] md:text-[150px] text-7xl font-bowldyOneSC z-10 md:z-0">bespoke</motion.span>
                     <motion.span variants={fromLeft} className="lg:max-w-72 md:font-medium text-normal text-sm lg:text-right text-center font-alata z-20">
-                        <p>LOREM IPSUM DOLOR SIT AMET, SUSPENDISSE RHONCUS METUS ET ANTE DICTUM
-                            TEMPUS LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. ET
-                            ANTE DICTUM TEMPUS. ET ANTE DICTUM.
+                        <p>We are Lilibetz FURNITURE, your premier nationwide furniture shop.
+                             Explore our extensive collection and place your order today.
+                              You also have the option to request a custom order to perfectly suit your needs.
                         </p>
                     </motion.span>
                     <motion.div variants={fromLeft} className='hidden lg:block'>

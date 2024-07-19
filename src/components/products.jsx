@@ -11,7 +11,7 @@ const products = [
         id: 1,
         title: "sofas",
         alt: "The sofas",
-        description: "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+        description: "Discover our extensive range of comfortable and stylish sofas, designed to enhance your living space with both elegance and coziness.",
         src: Sofa,
         color: "#fbbf24",
         tcolor: "#ffffff"
@@ -20,7 +20,7 @@ const products = [
         id: 2,
         title: "dining sets",
         alt: "The Dining Sets",
-        description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rockyyryey.",
+        description: "Explore our collection of elegant dining sets, crafted to make every meal a special occasion and complement your dining area beautifully.",
         src: Dining,
         color: "#e5e5e5",
         tcolor: "#242424"
@@ -29,7 +29,7 @@ const products = [
         id: 3,
         title: "coffee tables",
         alt: "The coffee tables",
-        description: "Though he views photography as a medium for san ambiguity—a certain tension—that lets the viewer find their own story within them.",
+        description: "Find the perfect coffee table to complete your living room decor, offering both functionality and a touch of sophistication.",
         src: Coffee,
         color: "#fbbf24",
         tcolor: "#ffffff"
@@ -38,7 +38,7 @@ const products = [
         id: 4,
         title: "beds",
         alt: "The Beds",
-        description: "Though he views photography as a medium for san ambiguity—a certain tension—that lets the viewer find their own story within them.",
+        description: "Experience luxurious comfort with our premium beds, meticulously designed to provide you with a restful and rejuvenating night's sleep.",
         src: Bed,
         color: "#e5e5e5",
         tcolor: "#242424"

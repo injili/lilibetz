@@ -24,9 +24,8 @@ const About = () => {
     const size = isHovered ? "400" : "40";
 
     return (
-        <div className="flex flex-col items-center justify-center w-full h-screen overflow-x-hidden bg-neutral-200">
+        <div className="flex flex-col items-center justify-center w-full h-screen overflow-x-hidden bg-neutral-200" id="about">
             <motion.div
-                id="about"
                 className="mask h-screen w-full"
                 animate={{
                     WebkitMaskPosition: `${mousePosition.x - size / 2}px ${
@@ -40,12 +39,13 @@ const About = () => {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus metus et ante dictum tempus. Nulla pulvinar libero ut iaculis interdum. Vestibulum. Nulla pulvinar libero ut iaculis interdum.
+                    Additionally, we offer a well-stocked timber yard for all your needs. Visit us today to experience our commitment to excellence and transform your living spaces with our premium offerings.
                 </p>
             </motion.div>
             <div>
                 <p className="font-alata text-4xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44">
-                    Mauris id sapien dui. <span className="text-amber-400">Morbi nisi ante,</span> convallis in lacus in, tempor cursus tellus. Aenean porttitor, lorem pretium tincidunt egestas, odio quam pulvinar arcu.  pellentesque ultricies arcu nisl enim. 
+                Welcome to <span className="text-amber-400">Lilibetz FURNITURE</span>, where exceptional design meets unparalleled comfort.
+                We specialize in crafting high-quality furniture and providing expert interior decoration services, covering everything from beds to sofas and more.
                 </p>
             </div>
         </div>
