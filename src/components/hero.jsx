@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 import imageThingy from '../assets/img/file.png'
 import ParallaxText from "./parallax";
 // import hero from '../assets/img/hero.jpg';
@@ -107,12 +108,14 @@ function Hero() {
                 </motion.div>
                 <div className="flex md:justify-center items-center lg:gap-20 mx-4"> 
                         <motion.div variants={fromRight}>
-                            <motion.button 
-                                whileHover={{ scale: 1.2 }}
-                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                className='text-lg bg-amber-400 font-alata text-zinc-950 font-extrabold rounded-full h-44 w-44 hidden lg:block'>
-                                    PRODUCTS
-                            </motion.button>
+                            <Link to="/products">
+                                <motion.button 
+                                    whileHover={{ scale: 1.2 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                    className='text-lg bg-amber-400 font-alata text-zinc-950 font-extrabold rounded-full h-44 w-44 hidden lg:block'>
+                                        PRODUCTS
+                                </motion.button>
+                            </Link>
                         </motion.div>
                         <motion.span variants={fromLeft} className="font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl z-0">decor</motion.span>
                 </div>
