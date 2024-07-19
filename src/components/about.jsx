@@ -35,7 +35,7 @@ const About = () => {
                 }}
                 transition={{ ease: "backOut", duration: 0.0 }}
             >
-                <p className="font-alata text-4xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44"
+                <p className="font-alata text-3xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
@@ -43,7 +43,7 @@ const About = () => {
                 </p>
             </motion.div>
             <div>
-                <p className="font-alata text-4xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44">
+                <p className="font-alata text-3xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44">
                 Welcome to <span className="text-amber-400">Lilibetz FURNITURE</span>, where exceptional design meets unparalleled comfort.
                 We specialize in crafting high-quality furniture and providing expert interior decoration services, covering everything from beds to sofas and more.
                 </p>

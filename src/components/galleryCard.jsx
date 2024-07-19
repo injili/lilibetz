@@ -19,7 +19,7 @@ export default function GalleryCard({ image }) {
             <div style={{ display: imageLoaded ? 'none' : 'inline'}}className="rounded-md col-span-1 h-[264px] w-[396px]">
                 <Blurhash
                 hash={image.loader}
-                width={410}
+                width={420}
                 height={264}
                 resolutionX={35}
                 resolutionY={35}
