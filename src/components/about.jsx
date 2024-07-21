@@ -39,7 +39,8 @@ const About = () => {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
-                    Additionally, we offer a well-stocked timber yard for all your needs. Visit us today to experience our commitment to excellence and transform your living spaces with our premium offerings.
+                   Welcome to Lilibetz FURNITURE, where exceptional design meets unparalleled comfort.
+                We specialize in crafting high-quality furniture and providing expert interior decoration services, covering everything from beds to sofas and more.
                 </p>
             </motion.div>
             <div>
