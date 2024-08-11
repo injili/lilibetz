@@ -116,21 +116,22 @@ export default function Gallery() {
         <div className='pt-12 text-neutral-200 w-full'>
             <div className=''>
             <div className='m-2 p-2 md:m-8 md:p-8 flex flex-col justify-center items-center'>
-                <h1 className='py-12 text-7xl md:text-8xl text-center font-bold font-alata'>welcome to our collection</h1>
-                <p className='text-center font-bold font-poiretOne '>Explore our extensive range of high-quality furniture and decor pieces, each crafted with precision and attention to detail. From cozy sofas to elegant dining sets, stylish coffee tables, and luxurious beds, our collection is designed to meet all your interior needs.
-                    Browse through our carefully curated selection, find inspiration, and discover pieces that will transform your living spaces. Whether you're looking for a statement piece or functional furniture, we have something for every taste and style.</p>
+                <h1 className='py-4 md:py-12 text-5xl md:text-8xl text-center font-bold font-alata'>welcome to our collection</h1>
+                <p className='text-center font-bold font-poiretOne max-w-[1200px]'>Discover our premium furniture and decor, crafted with precision for every style. From cozy sofas to elegant dining sets and luxurious beds, our collection has everything you need to transform your living spaces. Explore our curated selection and find the perfect pieces for your home.</p>
             </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 p-2 pb-8 md:mx-8 md:p-8 overflow-hidden'>
-                { 
-                    images.map( (image) => {
-                        return <GalleryCard key={images.id} image={image} />
-                    })
-                }
+            <div className='grid justify-items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] gap-4 mx-2 p-2 pb-8 md:mx-8 md:p-8 overflow-hidden'>
+                    { 
+                        images.map( (image) => {
+                            return <GalleryCard key={images.id} image={image} />
+                        })
+                    }
+                </div>
             </div>
             <div className='m-2 p-2 md:m-8 md:p-8 '>
                 <p className='text-center font-bold font-poiretOne '>Elevate your home with our beautiful and functional furniture. Visit us in-store or shop online to experience the Lilibetz FURNITURE difference. Your dream home is just a click away!</p>
             </div>
         </div>
     );
-};
+}

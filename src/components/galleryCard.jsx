@@ -16,7 +16,7 @@ export default function GalleryCard({ image }) {
 
     return (
         <>
-            <div style={{ display: imageLoaded ? 'none' : 'inline'}}className="rounded-md col-span-1 h-[264px] w-[396px]">
+            {/* <div style={{ display: imageLoaded ? 'none' : 'inline'}}className="rounded-md col-span-1 h-[264px] w-[396px]">
                 <Blurhash
                 hash={image.loader}
                 width={420}
@@ -25,9 +25,8 @@ export default function GalleryCard({ image }) {
                 resolutionY={35}
                 punch={1}
                 />
-            </div>
-            {/* <divclassName='w-96 h-24 grid-span-1'> */}
-            <div style={{ display: !imageLoaded ? 'none' : 'inline'}}>
+            </div> */}
+            <div>
                 <img
                     src={image.src}
                     alt={image.alt}
