@@ -124,7 +124,7 @@ export default function Gallery() {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] gap-4 mx-2 p-2 pb-8 md:mx-8 md:p-8 overflow-hidden'>
                     { 
                         images.map( (image) => {
-                            return <GalleryCard key={images.id} image={image} />
+                            return <GalleryCard key={image.id} image={image} />
                         })
                     }
                 </div>
