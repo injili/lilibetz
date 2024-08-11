@@ -1,8 +1,7 @@
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { FaArrowDown } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
-import imageThingy from '../assets/img/file.png'
+import imageThingy from '../assets/img/file.avif'
 import ParallaxText from "./parallax";
 // import hero from '../assets/img/hero.jpg';
 
@@ -102,7 +101,7 @@ function Hero() {
                         </div>
                     </motion.div>
                 </div>
-                <motion.img variants={fromTop} src={imageThingy} alt="the chair" className="absolute w-[350px] lg:w-[550px] z-0 md:z-10" />
+                <motion.img variants={fromTop} src={imageThingy} decoding="async" type="avif" alt="the chair" className="absolute w-[350px] lg:w-[550px] z-0 md:z-10" />
                 <motion.div variants={fromLeft} className="z-20">
                     <ParallaxText baseVelocity={-5}> interior </ParallaxText>
                 </motion.div>

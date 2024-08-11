@@ -1,21 +1,21 @@
 import GalleryCard from './galleryCard';
 
 
-import One from '../assets/img/1.jpg';
-import Two from "../assets/img/2.jpg";
-import Three from "../assets/img/3.jpg";
-import Four from "../assets/img/4.jpg";
-import Five from "../assets/img/5.jpg";
-import Six from "../assets/img/6.jpg";
-import Seven from "../assets/img/7.jpg";
-import Eight from "../assets/img/8.jpg";
-import Nine from "../assets/img/9.jpg";
-import Ten from "../assets/img/10.jpg";
-import Eleven from "../assets/img/11.jpg";
-import Twelve from "../assets/img/12.jpg";
-import Thirteen from "../assets/img/13.jpg";
-import Fourteen from "../assets/img/14.jpg";
-import Fifteen from "../assets/img/15.jpg";
+import One from '../assets/img/1.avif';
+import Two from "../assets/img/2.avif";
+import Three from "../assets/img/3.avif";
+import Four from "../assets/img/4.avif";
+import Five from "../assets/img/5.avif";
+import Six from "../assets/img/6.avif";
+import Seven from "../assets/img/7.avif";
+import Eight from "../assets/img/8.avif";
+import Nine from "../assets/img/9.avif";
+import Ten from "../assets/img/10.avif";
+import Eleven from "../assets/img/11.avif";
+import Twelve from "../assets/img/12.avif";
+import Thirteen from "../assets/img/13.avif";
+import Fourteen from "../assets/img/14.avif";
+import Fifteen from "../assets/img/15.avif";
 
 
 const images = [

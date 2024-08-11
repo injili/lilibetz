@@ -6,6 +6,8 @@ export default function GalleryCard({ image }) {
         <>
             <div>
                 <img
+                    decoding="async"
+                    type="avif"
                     src={image.src}
                     alt={image.alt}
                     className='rounded-md col-span-1'

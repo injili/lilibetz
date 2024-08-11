@@ -1,8 +1,8 @@
 import { Card } from "./card";
-import Bed from '../assets/img/bed.jpg';
-import Coffee from '../assets/img/coffee.jpg';
-import Dining from '../assets/img/dining.jpg';
-import Sofa from '../assets/img/sofa.jpg';
+import Bed from '../assets/img/bed.avif';
+import Coffee from '../assets/img/coffee.avif';
+import Dining from '../assets/img/dining.avif';
+import Sofa from '../assets/img/sofa.avif';
 import { useScroll } from "framer-motion";
 import { useRef } from "react";
 
@@ -57,7 +57,7 @@ export default function Products() {
             {
                 products.map( (product, i) => {
                     const targetScale = 1 - ( (products.length - i) * 0.05);
-                    return <Card key={product.id} product={product} i={i} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+                    return <Card key={product.id} product={product} i={i} theprogress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
                 })
             }
         </div>
