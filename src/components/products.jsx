@@ -53,7 +53,7 @@ export default function Products() {
     })
 
     return (
-        <div ref={container} className="lgmt-8 lg:mb-8">
+        <div ref={container} className="lg:mb-8">
             {
                 products.map( (product, i) => {
                     const targetScale = 1 - ( (products.length - i) * 0.05);
