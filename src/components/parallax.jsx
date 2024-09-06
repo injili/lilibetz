@@ -25,11 +25,11 @@ function ParallaxText({ children, baseVelocity = 100 }) {
         clamp: false
     })
 
-    const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+    const x = useTransform(baseX, (v) => `${wrap(-25, -45, v)}%`);
 
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
-        let moveBy = directionFactor.current * baseVelocity * (delta / 600);
+        let moveBy = directionFactor.current * baseVelocity * (delta / 500);
 
         if (velocityFactor.get() < 0) {
             directionFactor.current = -1;
@@ -44,7 +44,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
     return (
         <div className='overflow-hidden -tracking-2 leading-none m-0 whitespace-nowrap flex flex-nowrap w-screen'>
-            <motion.div className='flex whitespace-nowrap flex flex-nowrap lg:text-[230px] md:text-[150px] text-7xl' style={{ x }}>
+            <motion.div className='flex whitespace-nowrap flex flex-nowrap lg:text-[130px] md:text-[150px] text-7xl' style={{ x }}>
+                <span className="mr-24 font-bowldyOneSC z-10">{children}</span>
                 <span className="mr-24 font-bowldyOneSC z-10">{children}</span>
                 <span className="mr-24 font-bowldyOneSC z-10">{children}</span>
                 <span className="mr-24 font-bowldyOneSC z-10">{children}</span>

@@ -32,21 +32,21 @@ function Navigation(){
             variants={navigate}
             initial="initial"
             animate="animate"
-            className="z-20 font-alata absolute w-full  top-0 bg-zinc-950"
+            className="z-40 font-alata absolute w-full top-0 bg-neutral-100 backdrop-blur-md bg-opacity-0 "
             >
-            <nav className="mx-4 py-4">
-                <div className="flex flex-wrap text-neutral-200 justify-center md:justify-between items-center">
+            <nav className="mx-4 px-12 py-4">
+                <div className="flex flex-wrap text-neutral-100 justify-center md:justify-between items-center">
+                    <motion.div variants={fromTop} className="text-3xl lg:text-2xl md:px-8">
+                        <Link to="/"><h1><span className="text-amber-400 font-pacifico font-medium">Lilibetz</span>  <span className="font-bowldyOneSC ">FURNITURE</span></h1></Link>
+                    </motion.div>
+                    {/* <div className="hidden md:block px-8"  id="navbar-default">
+                        <ul className="flex space-x-4">
+                        </ul>
+                    </div> */}
                     <div className="hidden md:block px-8"  id="navbar-default">
                         <ul className="flex space-x-4">
                             <Link to="/"><motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">HOME</motion.li></Link>
                             <Link to="/products"><motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">PRODUCTS</motion.li></Link>
-                        </ul>
-                    </div>
-                    <motion.div variants={fromTop} className="text-3xl lg:text-xl xl:text-2xl 2xl:text-4xl md:px-8">
-                        <Link to="/"><h1><span className="text-amber-400 font-pacifico font-medium">Lilibetz</span>  <span className="font-bowldyOneSC ">FURNITURE</span></h1></Link>
-                    </motion.div>
-                    <div className="hidden md:block px-8"  id="navbar-default">
-                        <ul className="flex space-x-4">
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">CONTACTS</motion.li>
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">YARD</motion.li>
                         </ul>

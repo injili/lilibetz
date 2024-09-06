@@ -74,7 +74,7 @@ function Hero() {
             >
             <div className="flex flex-col relative items-center justify-center ">
                 <div className="flex flex-wrap px-4 lg:px-24 gap-y-1 md:gap-x-24 items-center w-screen justify-center">
-                    <motion.span variants={fromLeft} className="leading-none lg:text-[200px] md:text-[150px] text-7xl font-bowldyOneSC z-10 md:z-0">bespoke</motion.span>
+                    <motion.span variants={fromLeft} className="leading-none lg:text-[130px] md:text-[150px] text-7xl font-bowldyOneSC z-10 md:z-20">bespoke</motion.span>
                     <motion.span variants={fromLeft} className="lg:max-w-72 md:font-medium text-normal text-sm lg:text-right text-center font-alata z-20">
                         <p>We are Lilibetz FURNITURE, your premier nationwide furniture shop.
                              Explore our extensive collection and place your order today.
@@ -101,7 +101,7 @@ function Hero() {
                         </div>
                     </motion.div>
                 </div>
-                <motion.img variants={fromTop} src={imageThingy} decoding="async" type="avif" alt="the chair" className="absolute w-[350px] lg:w-[550px] z-0 md:z-10" />
+                <motion.img variants={fromTop} src={imageThingy} decoding="async" type="avif" alt="the chair" className="absolute w-[350px] lg:w-[450px] z-0 md:z-10" />
                 <motion.div variants={fromLeft} className="z-20">
                     <ParallaxText baseVelocity={-5}> interior </ParallaxText>
                 </motion.div>
@@ -111,12 +111,12 @@ function Hero() {
                                 <motion.button 
                                     whileHover={{ scale: 1.2 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className='text-lg bg-amber-400 font-alata text-zinc-950 font-extrabold rounded-full h-44 w-44 hidden lg:block'>
+                                    className='text-md bg-amber-400 font-alata text-zinc-950 font-extrabold rounded-full h-36 w-36 hidden lg:block'>
                                         VIEW PRODUCTS
                                 </motion.button>
                             </Link>
                         </motion.div>
-                        <motion.span variants={fromLeft} className="font-bowldyOneSC leading-none lg:text-[230px] md:text-[150px] text-7xl z-0">decor</motion.span>
+                        <motion.span variants={fromLeft} className="font-bowldyOneSC leading-none lg:text-[130px] md:text-[150px] text-7xl z-20">decor</motion.span>
                 </div>
             </div>
             <div className="flex absolute bottom-12">

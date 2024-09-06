@@ -17,10 +17,10 @@ export const Card = ({ product, i, theprogress, range, targetScale }) => {
         <div ref={container} className='h-screen flex items-center justify-center sticky top-0'>
             <motion.div
                 style={{scale, top:`calc(-5vh + ${i * 30}px)`}}
-                className='flex lg:p-4 rounded-md lg:rounded-lg relative h-3/4 lg:h-auto lg:max-h-[800px] w-11/12 lg:w-9/12'
+                className='flex lg:p-4 rounded-md lg:rounded-lg relative h-3/4 lg:h-auto lg:max-h-[500px] w-11/12 lg:w-7/12'
                 >
                 <div className='h-full lg:max-h-[740px] relative overflow-hidden rounded-md lg:rounded w-full'>
-                    <motion.div style={{scale: imageScale}} className='h-full lg:max-h-[740px] w-full'>
+                    <motion.div style={{scale: imageScale}} className='h-full lg:max-h-[540px] w-full'>
                         <img decoding="async" type="avif" src={product.src} alt={product.alt} className='w-full object-cover h-full md:h-auto'/>
                     </motion.div>
                 </div>

@@ -24,7 +24,7 @@ const About = () => {
     const size = isHovered ? "400" : "40";
 
     return (
-        <div className="flex flex-col items-center justify-center w-full h-screen overflow-x-hidden bg-neutral-200" id="about">
+        <div className="flex flex-col items-center justify-center w-full min-h-screen overflow-x-hidden bg-neutral-200" id="about">
             <motion.div
                 className="mask h-screen w-full"
                 animate={{
@@ -35,7 +35,7 @@ const About = () => {
                 }}
                 transition={{ ease: "backOut", duration: 0.0 }}
             >
-                <p className="font-alata text-3xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44"
+                <p className="font-alata text-3xl md:text-5xl text-center max-w-[1150px] font-semibold py-12 md:m-12 px-12 "
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
@@ -44,7 +44,7 @@ const About = () => {
                 </p>
             </motion.div>
             <div>
-                <p className="font-alata text-3xl md:text-7xl text-center font-semibold px-12 md:px-36 lg:px-44">
+                <p className="font-alata text-3xl md:text-5xl text-center font-semibold 9y-12 max-w-[1150px] md:m-12 px-12">
                 Welcome to <span className="text-amber-400">Lilibetz FURNITURE</span>, where exceptional design meets unparalleled comfort.
                 We specialize in crafting high-quality furniture and providing expert interior decoration services, covering everything from beds to sofas and more.
                 </p>
