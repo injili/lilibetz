@@ -21,7 +21,7 @@ const About = () => {
         };
     }, []);
 
-    const size = isHovered ? "400" : "40";
+    const size = isHovered ? "300" : "40";
 
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen overflow-x-hidden bg-neutral-200" id="about">

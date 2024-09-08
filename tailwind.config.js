@@ -8,6 +8,7 @@ export default {
     extend: {
       boxShadow: {
         neo: '-10px 10px 29px #bebebe, 10px -10px 29px #ffffff',
+        teo: '-5px 5px 15px #bebebe,5px -5px 15px #ffffff',
       },
       fontFamily: {
         DMsans: ['DM Sans', 'sans-serif'],

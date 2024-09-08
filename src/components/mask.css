@@ -3,7 +3,7 @@
     mask-image: url("../assets/img/mask.svg");
     background: #fbbf24;
     mask-repeat: no-repeat;
-    mask-size: 50px;
+    mask-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
