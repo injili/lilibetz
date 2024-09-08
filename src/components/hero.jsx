@@ -81,7 +81,7 @@ function Hero() {
                               You also have the option to request a custom order to perfectly suit your needs.
                         </p>
                     </motion.span>
-                    <motion.div variants={fromLeft} className='hidden lg:block'>
+                    <motion.div variants={fromLeft} className='hidden lg:block z-40'>
                         <div className='flex text-2xl gap-4'>
                             <motion.div
                                 whileHover={{ scale: 1.5 }}
@@ -120,7 +120,7 @@ function Hero() {
                 </div>
             </div>
             <div className="flex absolute bottom-12">
-                    <motion.div variants={fromBottom} className='block lg:hidden'>
+                    <motion.div variants={fromBottom} className='block lg:hidden z-40'>
                         <div className='flex text-2xl gap-4'>
                             <motion.div
                                 whileHover={{ scale: 1.5 }}

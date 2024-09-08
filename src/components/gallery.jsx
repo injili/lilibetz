@@ -114,10 +114,9 @@ const images = [
 export default function Gallery() {
     return(
         <div className='pt-12 text-neutral-200 w-full'>
-            <div className=''>
+            <div>
             <div className='m-2 p-2 md:m-8 md:p-8 flex flex-col justify-center items-center'>
                 <h1 className='py-4 md:py-12 text-5xl md:text-8xl text-center font-bold font-alata'>welcome to our collection</h1>
-                <p className='text-center font-bold font-poiretOne max-w-[1200px]'>Discover our premium furniture and decor, crafted with precision for every style. From cozy sofas to elegant dining sets and luxurious beds, our collection has everything you need to transform your living spaces. Explore our curated selection and find the perfect pieces for your home.</p>
             </div>
             </div>
             <div className='grid justify-items-center'>

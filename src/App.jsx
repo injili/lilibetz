@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import Navigation from "./components/navigation";
 import Home from './pages/Home';
 import Shop from './pages/Shop';
+import Contacts from './components/contact';
 
 const Layout = () => {
   return (
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: <Shop/>
+      },
+      {
+        path: '/contacts',
+        element: <Contacts/>
       }
     ]
   }

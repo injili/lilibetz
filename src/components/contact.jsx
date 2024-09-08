@@ -2,22 +2,10 @@ import { TfiLocationPin } from "react-icons/tfi";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoCalendarOutline } from "react-icons/io5";
 import { MdOutlineLocalPhone } from "react-icons/md";
-import { MdNavigateNext } from "react-icons/md";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 export default function Contacts() {
     return (
         <div>
-            <div className="text-white flex justify-end font-alata">
-                <Link to="/products">
-                    <motion.button
-                        whileHover={{ scale: 1.2 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className="my-8 mx-12 text-3xl font-semibold flex items-end gap-2">view all products <MdNavigateNext />
-                    </motion.button>
-                </Link>
-            </div>
             <div className="min-h-screen lg:grid lg:grid-cols-5 gap-12 text-black bg-neutral-200">
                 <div className="col-span-2 flex flex-col items-start justify-center p-8 md:p-12 lg:p-24">
                     <p className="py-8 font-alata">Contact Us</p>

@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import About from "../components/about";
 import { useLocation } from "react-router-dom";
+import Toaction from "../components/toaction";
 
 export default function Home() {
     const { pathname } = useLocation();
@@ -30,6 +31,7 @@ export default function Home() {
             <About/>
             <Products/>
             <Contacts/>
+            <Toaction/>
         </div>
     );
 }

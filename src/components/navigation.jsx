@@ -32,7 +32,7 @@ function Navigation(){
             variants={navigate}
             initial="initial"
             animate="animate"
-            className="z-40 font-alata absolute w-full top-0 bg-neutral-100 backdrop-blur-md bg-opacity-0 "
+            className="z-40 font-alata absolute w-full top-0 bg-neutral-950 backdrop-blur-md bg-opacity-25 "
             >
             <nav className="mx-4 px-12 py-4">
                 <div className="flex flex-wrap text-neutral-100 justify-center md:justify-between items-center">
@@ -47,7 +47,7 @@ function Navigation(){
                         <ul className="flex space-x-4">
                             <Link to="/"><motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">HOME</motion.li></Link>
                             <Link to="/products"><motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">PRODUCTS</motion.li></Link>
-                            <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">CONTACTS</motion.li>
+                            <Link to="/contacts"><motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">CONTACTS</motion.li></Link>
                             <motion.li variants={fromTop} className="font-bold text-md xl:text-lg 2xl:text-lg">YARD</motion.li>
                         </ul>
                     </div>

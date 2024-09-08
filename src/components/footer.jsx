@@ -50,7 +50,7 @@ export default function Footer() {
                         <ul className="flex gap-2 my-4 lg:my-0 md:gap-4 text-sm font-bold lg:gap-6">
                             <Link to='/'><motion.li variants={fromBottom}>HOME</motion.li></Link>
                             <Link to='/products'><motion.li variants={fromBottom}>PRODUCTS</motion.li></Link>
-                            <Link to='/'><motion.li variants={fromBottom}>CONTACTS</motion.li></Link>
+                            <Link to='/contacts'><motion.li variants={fromBottom}>CONTACTS</motion.li></Link>
                             <Link to='/'><motion.li variants={fromBottom}>YARD</motion.li></Link>
                         </ul>
                         <motion.div variants={fromBottom} className="lg:hidden flex flex-wrap items-center gap-2 text-sm">
