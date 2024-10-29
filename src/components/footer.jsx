@@ -56,7 +56,7 @@ export default function Footer() {
                         <motion.div variants={fromBottom} className="lg:hidden flex flex-wrap items-center gap-2 text-sm">
                             <FaRegCopyright/>
                             <p> {getFullYear()} - Lilibetz FURNITURE</p>
-                            <p>from INJILI, with Love</p>
+                            <p> powered by injili.tech</p>
                         </motion.div>
                     </div>
                 </div>
